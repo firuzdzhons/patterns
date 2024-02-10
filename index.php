@@ -92,7 +92,8 @@ class MageFactory extends CharacterFactory
 
 function clientCode(CharacterFactory $characterFactory)
 {
-    echo $characterFactory->createCharacter("Warrior1", 90, 90);
+    $character = $characterFactory->createCharacter("Warrior1", 90, 90);
+    echo $character->name;
     echo "\n\n";
 }
 
